@@ -1,9 +1,16 @@
-const pronouns = [
+const boringpronouns = [
     "she", "her", "he", "him", "they", "them", "dude", "buddy", "pal", "friend", "mate", "comrade",
     "guy", "gal", "sibling", "folk", "amigo", "amiga", "bro", "sis", "chum", "fella", "fam", "acquaintance",
     "pard", "compadre", "colleague", "partner", "neighbour", "cohort", "peer", "associate", "confidant",
     "sidekick", "ally", "collaborator", "cooperator", "team-mate", "homie", "chap", "guv", "lad", "lass"
 ];
+const neopronouns = [
+    "xe", "xem", "ze", "hir", "ey", "em", "ne", "nem",
+    "ve", "ver", "tey", "ter", "e", "em", "fae", "faer", "per", "pers", "zie", "zir", "xie", "xir",
+    "ze", "zer", "sie", "sir", "ce", "cir", "zee", "zed", "zedself", "zme", "zmyr", "zmyrself",
+    "zir", "zirself", "zis", "zself", "zur", "zurself", "zte", "zteself", "zye", "zyeself", "zyr", "zyrself"
+];
+const pronouns = boringpronouns.concat(neopronouns)
 const headerRow = document.getElementById("header-row");
 const tableBody = document.getElementById("table-body");
 const pronounsList = document.getElementById("pronouns-list");
