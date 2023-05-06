@@ -40,7 +40,7 @@ function updateSelectedPronouns() {
             selected.push(`${pronouns[row]} / ${pronouns[col]}`);
         }
     });
-    pronounsList.textContent = selected.join(", ") || "None";
+    pronounsList.textContent = selected.join(", ") || "fkn watevs bruh";
 }
 
 createTable();

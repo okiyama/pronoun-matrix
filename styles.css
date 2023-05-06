@@ -19,8 +19,6 @@ body {
 h1, h2 {
     text-align: center;
     margin-bottom: 20px;
-    font-weight: bold;
-    color: #333;
 }
 
 .table-container {
@@ -32,6 +30,7 @@ h1, h2 {
 table {
     width: 100%;
     border-collapse: collapse;
+    background-image: linear-gradient(to right, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #8b00ff);
 }
 
 thead {
@@ -45,6 +44,7 @@ th, td {
     border: 1px solid #ccc;
     padding: 10px;
     text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 th:first-child {
@@ -62,19 +62,21 @@ input[type="checkbox"] {
 #selected-pronouns {
     margin-bottom: 20px;
     text-align: center;
+    padding: 10px;
+    border-radius: 5px;
 }
 
-/* Rainbow colors */
-th:nth-child(-n+7), td:nth-child(-n+7) {
-    background-image: linear-gradient(45deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #8b00ff);
-    background-size: 600% 600%;
+#selected-pronouns h2, #selected-pronouns p {
     animation: rainbow 5s linear infinite;
-    color: white;
-    font-weight: bold;
 }
 
 @keyframes rainbow {
-    0% {background-position: 0% 82%;}
-    50% {background-position: 100% 19%;}
-    100% {background-position: 0% 82%;}
+    0% {color: #ff0000;}
+    14% {color: #ff7f00;}
+    28% {color: #ffff00;}
+    42% {color: #00ff00;}
+    57% {color: #0000ff;}
+    71% {color: #4b0082;}
+    85% {color: #8b00ff;}
+    100% {color: #ff0000;}
 }
